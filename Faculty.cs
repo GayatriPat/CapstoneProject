@@ -28,7 +28,7 @@ namespace CapstoneProject
                     // var is used to declare implicitly typed local variable means it tells the compiler to figure out the type of the variable at compilation time.
                     var s1 = books[i, j].ToString();//book variable holds the record of total no of copys of particular book nd various no of books in library
                     //comparing s with s1
-                    if (s1.Equals(s))
+                    if (s1.Equals(s)) //if entered name of book matches with existing name of book it returns true
                     {
                         a = true;
                         return a;
@@ -41,10 +41,10 @@ namespace CapstoneProject
         }
         public void BorrowBook(String BookName, DateTime t) //manipulates bookissue variables
         {
-            if (BookName.Equals('b'))
-            {
-                Console.WriteLine("Sorry! You can't borrow this book ,It is just reference");
-            }
+//             if (BookName.Equals('b'))
+//             {
+//                 Console.WriteLine("Sorry! You can't borrow this book ,It is just reference");
+//             }
             if (this.booksBorrowed < 4)
             {
                 bookIssue[this.booksBorrowed, 0] = BookName;
