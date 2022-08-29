@@ -4,16 +4,16 @@ using System.Text;
 
 namespace CapstoneProject
 {
-    internal class LibraryBooks
+    internal class LibraryBooks               //base class
     {
         public int booksBorrowed; //no of books borrowed
-        public object[,] books = new object[5, 2];//for details of books
+        public object[,] books = new object[5, 2];//for details of books (name and no of copies of that book)
         public object[,] bookIssue = new object[3, 2];// for individual user
        public virtual void catalouge()
         {
             Console.WriteLine("Admin's Catalogue Management");
         }
-        public LibraryBooks() //constructor to initialize the book catalougue
+        public LibraryBooks() //constructor to initialize the book in library
         {
             char ch = 'a';
             for (int i = 0; i < 5; i++)
