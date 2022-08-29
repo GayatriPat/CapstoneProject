@@ -75,7 +75,7 @@ namespace CapstoneProject
                 {
                     if (this.bookIssue[i, j].Equals(s))
                     {
-                        TimeSpan? f;
+                        TimeSpan? f;                             // Timespan is difference bet 2 times
                         f = DateTime.Today - (DateTime)this.bookIssue[i, j + 1];
 
                         if (f?.TotalDays > 30)
