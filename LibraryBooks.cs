@@ -8,7 +8,7 @@ namespace CapstoneProject
     {
         public int booksBorrowed; //no of books borrowed
         public object[,] books = new object[5, 2];//for details of books (name and no of copies of that book)
-        public object[,] bookIssue = new object[3, 2];// for individual user
+        public object[,] bookIssue = new object[3, 2];// for individual user (name and book issue date of book)
        public virtual void catalouge()
         {
             Console.WriteLine("Admin's Catalogue Management");
