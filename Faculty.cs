@@ -9,7 +9,7 @@ namespace CapstoneProject
         public Faculty() : base()//faculty constructor 1st calls base class constructor and then initializes its own objs
         {
             booksBorrowed = 0;
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 3; i++) //to initialize bookIssue
             {
                 for (int j = 0; j < 2; j++)
                 {
